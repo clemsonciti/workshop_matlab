@@ -15,7 +15,7 @@ Now, let's open the ommand-line window. Here, you can type a command and hit `En
 ~~~
 x = 5
 ~~~
-{: .bash}
+{: .matlab}
 
 <variable>
 x = 5
