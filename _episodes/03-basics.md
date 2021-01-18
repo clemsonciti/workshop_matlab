@@ -13,7 +13,9 @@ keypoints:
 Now, let's open the ommand-line window. Here, you can type a command and hit `Enter`, and the command will be executed. If the command has a semi-column at the end, its output will be suppressed. Let's try this:
 
 ~~~
-
+x = 5
+~~~
+{: .bash}
 
 <variable>
 x = 5
