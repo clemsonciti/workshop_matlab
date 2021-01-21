@@ -1,5 +1,5 @@
 ---
-title: "Starting Matlab"
+title: "Working with vectors"
 teaching: 0
 exercises: 0
 questions:
