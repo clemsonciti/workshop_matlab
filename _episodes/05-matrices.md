@@ -374,7 +374,64 @@ ans =
 ~~~
 {: .output}
 
-An important special matrix is an *identity matrix*, often called *I* in math texts, which has ones in the main diagonal and zeros everywhere else. It is important because multiplying any matrix by the identity matrix produces the original matrix: *A*\**I* = *A*. 
+An important special matrix is an *identity matrix*, often called I in math texts, which has ones in the main diagonal and zeros everywhere else. It is important because multiplying any matrix by the identity matrix produces the original matrix: A\*I = I\*A = A. In a regular scalar world, number one is the identity: any number, multiplied by one, remains the same. In the matrix world, the identity matrix is the equivalent of number one. An identity matrix of size m-by-n can be created with `eye(m,n)`.
+
+~~~
+ones (3,3)
+~~~
+{: .matlab}
+
+~~~
+ans =
+     1     0     0   
+     0     1     0     
+     0     0     1
+~~~
+{: .output}
+
+An *inverse* of a matrix A is a matrix which, when multiplied by A, produces the identity matrix. In a scalar world, the inverse of number *x* is 1/*x* (the product of *x* and 1/*x* is the identity, or number one). In the matrix world, the inverse of a matrix is pretty tricky to compute by hand, but, luckily, in MATLAB you can do it easily by calling the `inv` function:
+
+
+~~~
+inv(A)
+~~~
+{: .matlab}
+
+~~~
+ans =
+   -1.2500   -0.1667    0.4167
+    1.0000    0.3333   -0.3333
+    0.0833   -0.1667    0.0833
+~~~
+{: .output}
+
+~~~
+A*inv(A)
+~~~
+{: .matlab}
+
+~~~
+ans =
+    1.0000         0    0.0000
+         0    1.0000    0.0000
+    0.0000         0    1.0000
+~~~
+{: .output}
+
+~~~
+inv(A)*A
+~~~
+{: .matlab}
+
+~~~
+ans =
+    1.0000         0    0.0000
+         0    1.0000    0.0000
+    0.0000         0    1.0000
+~~~
+{: .output}
+
+
 
 eye(5)
 zeros(5)
