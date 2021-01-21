@@ -431,40 +431,91 @@ ans =
 ~~~
 {: .output}
 
+For those of us who use MATLAB for more advanced linear algebra, there are many more functions for matrix operations, such as `det` (for determinant), `eig` (for eigenvectors and eigenvalues), `svd` (for singular value decomposition), and others. 
 
+In many situations, you need to generate random numbers, and matrices of random numbers. To generate a random number with uniform distribution between 0 and 1, you can use `rand` function; to generate m-by-n matrix of random numbers, you can use the same function as `rand (m,n)`: 
 
-eye(5)
-zeros(5)
-zeros(5,3)
-ones(3,4)
-rand(5)
-randn(5)
+~~~
+rand(3,4)
+~~~
+{: .matlab}
 
-X = rand(5)
-mean (X)
-std (X)
-mean (X(:))
+~~~
+ans =
+    0.8147    0.9134    0.2785    0.9649
+    0.9058    0.6324    0.5469    0.1576
+    0.1270    0.0975    0.9575    0.9706
+~~~
+{: .output}
 
-Y = randn (5)
-mean (Y)
-std (Y)
-mean (Y(:))
+If you want to generate random numbers with normal (Gaussian) distribution with mean of zero and standard deviation of one, you can use the `randn` function:
 
-sum (X)
-sum (X')
-sum (X(:))
+~~~
+rand(3,4)
+~~~
+{: .matlab}
 
-X+Y
-X*Y
-X.*Y
-inv(X)
-det(X)
+~~~
+ans =
+    0.7254   -0.2050    1.4090   -1.2075
+   -0.0631   -0.1241    1.4172    0.7172
+    0.7147    1.4897    0.6715    1.6302
+~~~
+{: .output}
 
-Y>0
+You can use this to genrate normally-distributed numbers with any mean and standard deviation. For example, to generate a matrix of normally-distributed random variables with mean 2 and standard deviation 3, you can use `2 + 3*rand(3,4)`.
+
+Let's say we have generated a matrix with zero-mean random Guassian numbers, and we want to "filter out" the negative numbers, that is, to set them to zero. We can do this with element-by-element multiplication:
+
+~~~
+Y = rand(5,5)
+~~~
+{: .matlab}
+
+~~~
+Y =
+    1.1093   -0.0068    1.1174    1.5442    2.3505
+   -0.8637    1.5326   -1.0891    0.0859   -0.6156
+    0.0774   -0.7697    0.0326   -1.4916    0.7481
+   -1.2141    0.3714    0.5525   -0.7423   -0.1924
+   -1.1135   -0.2256    1.1006   -1.0616    0.8886
+~~~
+{: .output}
+
+~~~
+Y > 0
+~~~
+{: .matlab}
+
+~~~
+ans =
+
+  5×5 logical array
+
+   1   0   1   1   1
+   0   1   0   1   0
+   1   0   1   0   1
+   0   1   1   0   0
+   0   0   1   0   1
+~~~
+{: .output}
+
+~~~
 Y.*(Y>0)
+~~~
+{: .matlab}
 
+~~~
+Y =
+    1.1093         0    1.1174    1.5442    2.3505
+         0    1.5326         0    0.0859         0
+    0.0774         0    0.0326         0    0.7481
+         0    0.3714    0.5525         0         0
+         0         0    1.1006         0    0.8886
+~~~
+{: .output}
 
-
+You can see that the negative elements are filtered out, because they have been multiplied by zero, and the positive elements are preserved, because they have been multiplied by one. One thing that I would like to emphasize is how simple the matrix operations are. So far, we have never had to write a loop. It is possible to write a `for` loop in MATLAB, but it is actually not recommended to use a `for` loop if you can do the same thing without it by using MATLAB's matrix operations. This is particularly true of nested loops: try to avoid them as much as possible (not because they are bad, but because they are slow). Many of matrix operatins are *parallelizable*, that is, to compute the result, you can run several computations in parallel, rather than accessing them sequentially in a `for` loop. If your computer has several cores (CPUs), MATLAB will find a way to best utilize all of them for the purpose of parallelization. And, of course, on Palmetto we have some compute nodes which have as much as 56 cores, so MATLAB takes full advantage of that.
 
 
 
