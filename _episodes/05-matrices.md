@@ -1,6 +1,6 @@
 
 ---
-title: "Starting Matlab"
+title: "Working with matrices"
 teaching: 0
 exercises: 0
 questions:
