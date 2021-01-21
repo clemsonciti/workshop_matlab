@@ -136,6 +136,7 @@ str = 'Hello World!'
 ~~~
 str =
     'Hello World!'
+~~~
 {: .output}
 
 ~~~
@@ -146,6 +147,7 @@ str(2)
 ~~~
 ans =
     'e'
+~~~
 {: .output}
 
 `str(2)` is the second character in `str`, which is `e`. Length of a string can be computed using the `length` function.
@@ -165,6 +167,7 @@ ans =
   1×4 logical array
 
    1   1   1   1
+~~~
 {: .output}
 
 We initialize the variable `name` to a string "John". Then, if we naively want to compare it to "John", we would expect the answer `true`, but what we get instead is four ones. To understand better what's going on, let's compare it to "Jack":
@@ -180,6 +183,7 @@ ans =
   1×4 logical array
 
    1   0   0   0
+~~~
 {: .output}
 
 When you do `name == 'Jack'`, it compares the two vectors ("John" and "Jack") element-by-element. The first element is the same, therefore you get a one; the remaining elements are different, therefore you get three zeros. The moral is not to use `==` to compare strings! Instead, use a special function called `strcmp`:
@@ -195,6 +199,7 @@ ans =
   logical
 
    1
+~~~   
 {: .output}
 
 ~~~
@@ -208,6 +213,7 @@ ans =
   logical
 
    0
+~~~
 {: .output}
 
 Now, this makes so much more sense! The variable `name` is equal to the string "John" (logical one), and not equal to the string "Jack" (logical zero).
