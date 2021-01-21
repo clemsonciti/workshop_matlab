@@ -311,12 +311,70 @@ Matrix dimensions must agree.
 ~~~
 {: .error}
 
-When you get the error like this, you can check the size of the matrices by using the `size` function to see where you went wrong. There is a lot of matrix multiplications in a typical MATLAB project, so the `size` function becomes veru handy.
+When you get the error like this, you can check the size of the matrices by using the `size` function to see where you went wrong. There is a lot of matrix multiplications in a typical MATLAB project, so the `size` function becomes very handy.
 
-You can also stack the matrices together (concatenation):
+You can also stack the matrices together (concatenation), in horizontal or vertical direction:
 
+~~~
 [A A']
+~~~
+{: .matlab}
+
+~~~
+ans =
+
+     1     2     3     1     4     7
+     4     5     0     2     5     8
+     7     8     9     3     0     9
+~~~
+{: .output}
+
+~~~
 [A; A']
+~~~
+{: .matlab}
+
+~~~
+ans =
+     1     2     3
+     4     5     0
+     7     8     9
+     1     4     7
+     2     5     8
+     3     0     9
+~~~
+{: .output}
+
+Now, let's talk about creating some specific matrices. To create a matrix of zeros, you can use the `zeros` function, specifying the size in parenthesis:
+
+~~~
+zeros (4, 4)
+~~~
+{: .matlab}
+
+~~~
+ans =
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+~~~
+{: .output}
+
+Likewise, a matrix of ones can be created by the `ones` function:
+~~~
+ones (2, 5)
+~~~
+{: .matlab}
+
+~~~
+ans =
+     1     1     1     1     1
+     1     1     1     1     1
+~~~
+{: .output}
+
+An important special matrix is an *identity matrix*, often called *I* in math texts, which has ones in the main diagonal and zeros everywhere else. It is important because multiplying any matrix by the identity matrix produces the original matrix: *A*\**I* = *A*. 
 
 eye(5)
 zeros(5)
