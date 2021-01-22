@@ -3,9 +3,9 @@ title: "The basics of Matlab"
 teaching: 0
 exercises: 0
 questions:
-- "how to initialize a variable?"
-- "how to do basic arithmetics?"
-- "how to get help?"
+- "how to initialize a variable"
+- "how to do basic arithmetics
+- "how to get help?
 objectives:
 - "MATLAB built-in functions"
 - "`help`, `lookfor`"
