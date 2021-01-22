@@ -3,9 +3,9 @@ title: "Introduction"
 teaching: 0
 exercises: 0
 questions:
-- "What is MATLAB?"
+- "what is MATLAB?"
 objectives:
-- "Introduction"
+- "introduction"
 keypoints:
 - "MATLAB is a licensed programming language optimized for matrix calculations and popular in scientific programming"
 ---
