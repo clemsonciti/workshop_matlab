@@ -3,11 +3,15 @@ title: "More indexing; Strings"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How to find things in a vector or a matrix?"
+- "How to work with strings?"
 objectives:
-- "First learning objective. (FIXME)"
+- "`find`"
+- "string operations"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "use `ind2sub` to convert indices to (row, column) format"
+- "strings are vectors of characters"
+- "use `strcmp` to compare strings"
 ---
 
 Let's talk a little bit about finding things in a vector or a matrix. For this purpose, we can use the `find` command. Let's bring up our old vector `z` and find the elements in a vector that are equal to three: 
