@@ -3,8 +3,8 @@ title: "Working with matrices"
 teaching: 0
 exercises: 0
 questions:
-- "How to initialize a matrix?"
-- "How to access and modify elements in a matrix?"
+- "how to initialize a matrix"
+- "how to access and modify elements in a matrix"
 objectives:
 - "matrix indexing"
 - "matrix transposing"
