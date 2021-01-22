@@ -3,7 +3,7 @@ title: "Visualization"
 teaching: 0
 exercises: 0
 questions:
-- "How to plot data?"
+- "how to plot data"
 objectives:
 - "`plot`"
 - "line plots and scatter plots"
