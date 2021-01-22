@@ -3,7 +3,8 @@ title: "Working with vectors"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How to initialize vectors?"
+- "How to do basic operations (addition, multiplication) with vectors?"
 objectives:
 - "First learning objective. (FIXME)"
 keypoints:
