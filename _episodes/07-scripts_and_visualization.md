@@ -14,7 +14,7 @@ MATLAB is pretty great for visualizing your results. The main function for visua
 
 To see a simple example of how it works, let's plot the square root function. Let's 
 
-<img src="../fig/ sqrt_line.png">
+<img src="../fig/sqrt_line.png">
 
 
 
