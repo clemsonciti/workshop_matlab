@@ -12,15 +12,21 @@ keypoints:
 
 MATLAB is pretty great for visualizing your results. The main function for visualization is `plot`; it's an incredibly powerful function with many options. In our tutorial, I will show you just the basic use; if you are curious, you can read more about it on the excellent [MATLAB website](https://www.mathworks.com/help/matlab/ref/plot.html). 
 
-To see a simple example of how it works, let's plot the square root function. Let's 
+To see a simple example of how it works, let's plot the square root function. Let's create a vector `x` of numbers from 1 to 100, and another vector `y` of their square roots, and then plot `y` against `x`:
 
-<img src="../fig/sqrt_line.png">
-
-
-
+~~~
 x = 1:100;
 y = sqrt (x);
-plot (x, y)
+plot (x, y);
+~~~
+{: .matlab}
+
+
+<img src="../fig/sqrt_line.png" style="height:450px">
+
+
+
+
 <line plot>
 plot (x, y, 'o')
 <scatter plot>
