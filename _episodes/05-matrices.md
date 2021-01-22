@@ -3,11 +3,18 @@ title: "Working with matrices"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How to initialize a matrix?"
+- "How to access and modify elements in a matrix?"
 objectives:
-- "First learning objective. (FIXME)"
+- "matrix indexing"
+- "matrix transposing"
+- "`zeros`, `ones`, `eye`"
+- "random matrices"
+- "matrix inversion"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "in matrix indexing, row goes first and column goes second"
+- "`:` could be used to get an entire row or column of a matrix"
+- "when multiplying two matrices, the number of columns in the first matrix must be equal to the number of rows of the second matrix"
 ---
 
 Now we are ready to start working with matrices. You can initialize the matrix by listing its elements in the square brackets []; rows are separated with semi-colons.
