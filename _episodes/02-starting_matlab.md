@@ -3,7 +3,7 @@ title: "Starting Matlab"
 teaching: 0
 exercises: 0
 questions:
-- "How do I run MATLAB on Palmetto?"
+- "how to run MATLAB on Palmetto"
 objectives:
 - "qsub"
 - "module load"
