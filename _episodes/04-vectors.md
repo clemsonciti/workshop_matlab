@@ -3,8 +3,8 @@ title: "Working with vectors"
 teaching: 0
 exercises: 0
 questions:
-- "How to initialize vectors?"
-- "How to do basic operations (addition, multiplication) with vectors?"
+- "how to initialize vectors"
+- "how to do basic operations (addition, multiplication) with vectors"
 objectives:
 - "row and column vectors; transposing"
 - "range"
