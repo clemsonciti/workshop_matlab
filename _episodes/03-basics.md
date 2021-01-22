@@ -3,9 +3,13 @@ title: "The basics of Matlab"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "how to initialize a variable?"
+- "how to do basic arithmetics?"
+- "how to get help?"
 objectives:
-- "First learning objective. (FIXME)"
+- "MATLAB built-in functions"
+- "`help`, `lookfor`"
+- "`format`
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
