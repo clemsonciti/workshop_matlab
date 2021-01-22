@@ -9,9 +9,12 @@ questions:
 objectives:
 - "MATLAB built-in functions"
 - "`help`, `lookfor`"
-- "`format`
+- "`format`"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "variables are initialized by setting them to a value, no need to declare variables"
+- "double (8-byte) precision used by default; default output format is four decimal points"
+- "manuals (accessed through `help` and `lookfor` commands) are very helpful"
+- "use `=` to assign a value, and `==` to compare"
 ---
 
 Now, let's open the ommand-line window. Here, you can type a command and hit `Enter`, and the command will be executed. If the command has a semi-colon at the end, its output will be suppressed. Let's try this:
