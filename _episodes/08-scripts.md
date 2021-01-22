@@ -95,7 +95,7 @@ ans =
 
 You can see that both measures of blood pressure are lower in people who did not have a stroke. So, watch your blood pressure!
 
-Let's compute the correlation between systoli and diastolic pressure:
+Let's compute the correlation between systolic and diastolic pressure:
 
 ~~~
 corrcoef (sys, dias)
