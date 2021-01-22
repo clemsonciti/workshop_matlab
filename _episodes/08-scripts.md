@@ -8,8 +8,8 @@ questions:
 - "how to do basic statistics"
 objectives:
 - "`xlsread`"
-- plotting: `xlabel`, `ylabel`, `title`, `legend`
-- basic stats: `mean`, `corrcoef`
+- "plotting: `xlabel`, `ylabel`, `title`, `legend`"
+- "basic stats: `mean`, `corrcoef`"
 keypoints:
 - "scripts are blocks of code that you can save and re-run"
 - "MATLAB comes with many statistical functions"
