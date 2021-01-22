@@ -1,5 +1,5 @@
 ---
-title: "Starting Matlab"
+title: "Scripts"
 teaching: 0
 exercises: 0
 questions:
