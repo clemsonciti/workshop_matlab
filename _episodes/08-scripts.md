@@ -3,11 +3,16 @@ title: "Scripts"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "how to save the code for future use"
+- "how to label plots"
+- "how to do basic statistics"
 objectives:
-- "First learning objective. (FIXME)"
+- "`xlsread`"
+- plotting: `xlabel`, `ylabel`, `title`, `legend`
+- basic stats: `mean`, `corrcoef`
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "scripts are blocks of code that you can save and re-run"
+- "MATLAB comes with many statistical functions"
 ---
 So far, we have used the command-line interface to MATLAB. Oftentimes, you need to write a program and save it so you can rerun it later. A MATLAB program is called a *script*, and it is a file with the `.m` extension. 
 
