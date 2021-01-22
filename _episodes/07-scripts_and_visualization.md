@@ -1,5 +1,5 @@
 ---
-title: "Scripts and visualization
+title: "Scripts and visualization"
 teaching: 0
 exercises: 0
 questions:
