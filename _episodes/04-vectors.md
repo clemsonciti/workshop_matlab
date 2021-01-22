@@ -6,9 +6,12 @@ questions:
 - "How to initialize vectors?"
 - "How to do basic operations (addition, multiplication) with vectors?"
 objectives:
-- "First learning objective. (FIXME)"
+- "row and column vectors; transposing"
+- "range"
+- "indexing"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "for basic arithmetics, vectors must match in size and orientation (row, column)"
+- "two types of multiplication: vector multiplication, and element-by-element"
 ---
 
 As I have mentioned, the real power of MATLAB is in matrix computations. Matrices are two-dimensional arrays; before we go there, let's talk about one-dimensional arrays, which are also called *vectors*. The elements of a vector go inside square brackets. Let's define a vector:
