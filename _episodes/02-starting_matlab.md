@@ -3,11 +3,12 @@ title: "Starting Matlab"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How do I run MATLAB on Palmetto?"
 objectives:
-- "First learning objective. (FIXME)"
+- "qsub"
+- "module load"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "to start MATLAB, connect to a compute node and load the MATLAB module"
 ---
 If you don't have MATLAB installed on your local computer, you can use MATLAB which is installed on Palmetto. 
 
