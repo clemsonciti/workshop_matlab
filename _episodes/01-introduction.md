@@ -3,11 +3,11 @@ title: "Introduction"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "What is MATLAB?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Introduction"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "MATLAB is a licensed programming language optimized for matrix calculations and popular in scientific programming"
 ---
 MATLAB stands for "matrix laboratory"; it's a programming language which has been optimized for working with matrices. Matrices are a very common way to represent data, and, therefore, MATLAB is quite efficient for the purpose of building models that describe our data. Because of this, it is used extensively in statistics, data analysis, and machine learning. 
 
