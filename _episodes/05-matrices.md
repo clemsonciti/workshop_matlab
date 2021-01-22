@@ -384,7 +384,7 @@ ans =
 An important special matrix is an *identity matrix*, often called I in math texts, which has ones in the main diagonal and zeros everywhere else. It is important because multiplying any matrix by the identity matrix produces the original matrix: A\*I = I\*A = A. In a regular scalar world, number one is the identity: any number, multiplied by one, remains the same. In the matrix world, the identity matrix is the equivalent of number one. An identity matrix of size m-by-n can be created with `eye(m,n)`.
 
 ~~~
-ones (3,3)
+eye (3,3)
 ~~~
 {: .matlab}
 
