@@ -3,8 +3,8 @@ title: "More indexing; Strings"
 teaching: 0
 exercises: 0
 questions:
-- "How to find things in a vector or a matrix?"
-- "How to work with strings?"
+- "how to find things in a vector or a matrix"
+- "how to work with strings"
 objectives:
 - "`find`"
 - "string operations"
