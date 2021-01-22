@@ -3,11 +3,12 @@ title: "Visualization"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How to plot data?"
 objectives:
-- "First learning objective. (FIXME)"
+- "`plot`"
+- "line plots and scatter plots"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "use `figure` to plot the data on a new figure, and use `hold on` to superimpose plots on the same figure"
 ---
 
 MATLAB is pretty great for visualizing your results. The main function for visualization is `plot`; it's an incredibly powerful function with many options. In our tutorial, I will show you just the basic use; if you are curious, you can read more about it on the excellent [MATLAB website](https://www.mathworks.com/help/matlab/ref/plot.html). 
